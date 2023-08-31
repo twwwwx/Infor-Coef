@@ -6,7 +6,6 @@ export CUDA_VISIBLE_DEVICES=$1
 export TOKENIZERS_PARALLELISM=true
 # this is used for skim-training the pruned CoFi
 
-dir=/mnt/data/user/bao_rong/tanwx
 
 TASK=$2
 # if task==mrpc, label=2; if task==mnli, label=3; if task==qnli, label=2; if task==sst2, label=2
@@ -26,6 +25,7 @@ model_name_or_path=$7
 sparsity=$8
 bsz=$9
 skim=${10}
+dir=${11}
 
 python run_glue_vanilla.py \
     --dataset_name glue \

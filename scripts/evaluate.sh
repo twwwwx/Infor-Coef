@@ -1,6 +1,6 @@
 
 export TOKENIZERS_PARALLELISM=true
-model_path=/mnt/data/user/bao_rong/tanwx/dynamic_struct/skimFT_COFI/bert-base-uncased_glue_mrpc_vanilla_lr2e-05_bsz32_epochs7_skim0.0_norm0.0004_entrophy0.0005_sparsity0.0/epoch0
+model_path=/root/infor_coef/model # modify this path to your model path
 task=mrpc
 if [ "$task" == "mnli" ]; then
     label=3
